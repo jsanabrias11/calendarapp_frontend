@@ -30,7 +30,7 @@ export const calendarSlice = createSlice({
       state.activeEvent = null;
     },
     onAddNewEvent: (state, { payload }) => {
-      state.events.push(payload) // Nota: Aquí se puede usar el PUSH por se esta usando reduxToolkit y eso ayuda a no mutar el objeto.
+      state.events.push(payload)
       state.activeEvent = null;
     },
     onUpdateEvent: (state, { payload }) => {

@@ -72,7 +72,7 @@ export const CalendarPage = () => {
         endAccessor="end"
         style={{ height: 'calc(100vh - 80px)'  }}
         messages={ getMessages() }
-        eventPropGetter={ eventStyleGetter }
+        //eventPropGetter={  eventPropGetter}
         components={{
           event : CalendarEvent
         }}

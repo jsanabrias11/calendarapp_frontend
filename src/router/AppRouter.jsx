@@ -5,9 +5,11 @@ import { CalendarPage } from '../calendar';
 import { useAuthStore } from '../hooks';
 
 export const AppRouter = () => {
-  //const authStatus = 'not-authenticated'; // authenticated  //  not-authenticated // 'checking'
+  //const authStatus = 'authenticated'; // authenticated  //  not-authenticated // 'checking' // Desactivar y evaluar con status
 
   const { status, checkAuthToken } = useAuthStore();
+
+  
 
   useEffect(() => {
     checkAuthToken();
