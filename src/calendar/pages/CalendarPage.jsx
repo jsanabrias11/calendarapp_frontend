@@ -44,12 +44,11 @@ export const CalendarPage = () => {
   }
 
   const onSelect = ( event ) => {
-    console.log({ Click : event });
     setActiveEvent( event )
   }
 
   const onViewChanged = ( event ) => {
-    console.log({ ViewChanged : event });
+    // console.log({ ViewChanged : event });
     localStorage.setItem('lastView', event);
   }
 

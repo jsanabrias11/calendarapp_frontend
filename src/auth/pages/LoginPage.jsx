@@ -31,7 +31,6 @@ export const LoginPage = () => {
 
     const RegisterSubmit = ( event ) => {
         event.preventDefault();
-        console.log({ registerName, registerEmail, registerPassword, registerPassword2 });
         if(registerPassword !== registerPassword2){
             Swal.fire('Error al registrar usuario', 'Las claves deben ser iguales', 'error');
         }
@@ -48,24 +47,16 @@ export const LoginPage = () => {
     // const nDate = new Date()
     // console.log(nDate);
 
-    const ScheduleDay = (fecha) => {
-        console.log(new Date().setDate(3));
-        console.log(new Date().setDate(1));
+    // const ScheduleDay = (fecha) => {
+    //     console.log(new Date().setDate(3));
+    //     console.log(new Date().setDate(1));
 
-        let previo = new Date(fecha.getFullYear(), 0, 0);
-        let actual = new Date(fecha.getTime());
-        
-        console.log(previo);
-        console.log(actual);
-        console.log(actual - previo);
-        console.log((actual - previo + 1));
-        console.log((actual - previo + 1) / 86400000);
-        console.log(Math.ceil(actual - previo + 1) / 86400000);
-      };
+    //     let previo = new Date(fecha.getFullYear(), 0, 0);
+    //     let actual = new Date(fecha.getTime());
+    //   };
 
-    ScheduleDay(new Date);
+    // ScheduleDay(new Date);
 
-    console.log('Solo estoy en LOGIN');
 
     return (
         <div className="container login-container">
