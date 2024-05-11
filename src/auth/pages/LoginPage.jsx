@@ -65,6 +65,8 @@ export const LoginPage = () => {
 
     ScheduleDay(new Date);
 
+    console.log('Solo estoy en LOGIN');
+
     return (
         <div className="container login-container">
             <div className="row">
